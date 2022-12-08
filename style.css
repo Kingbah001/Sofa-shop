@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    border: 3px solid black;
+}
+
+.header {
+    border: 3px solid purple;
+    width: 90%;
+    margin-left: 10%;
+    display: flex;
+}
+
+.tittle {
+    border: 3px solid blue;
+    display: flex;
+    margin-top: 5px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.tittle span {
+    color: orange;
+}
+
+.hero-image {
+    border: 3px solid tomato;
+    background: url(./Images/sofashop.png);
+    background-size: cover;
+    width: 96%;
+    margin-left: 4%;
+}
+
+.hero-menu {
+    border: 3px solid yellow;
+    display: flex;
+    width: 70%;
+    margin-left: 30%;
+    justify-content: space-between;
+    background: #fff;
+    padding: 15px;
+    font-weight: bolder;
+}
+
+.hero-menu span {
+    cursor: pointer;
+}
+
+.hero-menu span:hover {
+    border-bottom: 5px solid rgb(255, 214, 138);
+}
+
+.image-content {
+    border: 3px solid green;
+    font-weight: 1000;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 45px;
+    margin: 27% 0 0 25%;
+}
+
+.image-content span {
+    color: orange;
+    margin-left: 70px;
+    text-decoration: solid;
+}
+
+.num {
+    border: 3px solid purple;
+    margin-top: 170px;
+    font-size: 1000%;
+    font-weight: bolder;
+    padding-left: 85%;
+    color: rgb(117, 117, 117);
+}
