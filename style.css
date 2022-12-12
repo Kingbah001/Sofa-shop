@@ -3,32 +3,81 @@
     padding: 0;
     box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Lato&family=Roboto+Slab&display=swap');
+
 
 .hero {
-    border: 3px solid black;
+    /* border: 3px solid black; */
+    display: flex;
+}
+.side{
+    /* border: 3px solid blue; */
+    box-shadow: 0 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.icon{
+    /* border: 3px solid #fdbf44; */
+    font-size: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+.line{
+    background-color: rgb(122, 122, 122);
+    width: 2px;
+    height: 100px;
+    margin-left: 23px;
+}
+.side-content{
+    /* border: 3px solid yellow; */
+    display: flex;
+    flex-direction: column;
+}
+.side span{
+    /* border: 3px solid blueviolet; */
+    writing-mode: vertical-rl;
+    margin-bottom: 20px;
+    line-height: 3;
+    display: block;
+}
+
+.GFG{
+    transform: scale(-1,-1);
+    -moz-transform: scale(-1,-1);
+    -webkit-transform: scale(-1,-1);
+    -o-transform: scale(-1,-1);
+    -ms-transform: scale(-1,-1);
+    transform: scale(-1,-1);
 }
 
 .header {
-    border: 3px solid purple;
-    width: 90%;
-    margin-left: 10%;
+    /* border: 3px solid purple; */
+    width: 98%;
+    margin-left: 1%;
+}
+.header-content{
+    /* border: 3px solid green; */
     display: flex;
 }
 
 .tittle {
-    border: 3px solid blue;
-    display: flex;
+    /* border: 3px solid blue; */
+    line-height: 40px;
     margin-top: 5px;
-    font-size: 30px;
-    font-weight: bolder;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: right;
 }
 
 .tittle span {
-    color: orange;
+    color: #fdbf44;
 }
 
 .hero-image {
-    border: 3px solid tomato;
+    /* border: 3px solid tomato; */
     background: url(./Images/sofashop.png);
     background-size: cover;
     width: 96%;
@@ -36,9 +85,11 @@
 }
 
 .hero-menu {
-    border: 3px solid yellow;
+    /* border: 3px solid yellow; */
+    box-shadow: 0 0 30px 2px;
     display: flex;
     width: 70%;
+    height: 50px;
     margin-left: 30%;
     justify-content: space-between;
     background: #fff;
@@ -55,24 +106,60 @@
 }
 
 .image-content {
-    border: 3px solid green;
-    font-weight: 1000;
-    /* font-family: Arial, Helvetica, sans-serif; */
-    font-size: 45px;
-    margin: 27% 0 0 25%;
+    /* border: 3px solid green; */
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 110px;
+    letter-spacing: -7px;
+    margin: 16.5% 0 0 25%;
 }
 
 .image-content span {
     color: orange;
-    margin-left: 70px;
+    margin-left: 170px;
     text-decoration: solid;
 }
-
-.num {
-    border: 3px solid purple;
-    margin-top: 170px;
-    font-size: 1000%;
+.overlay{
+    /* border: 3px solid red; */
+    border-left: 7px solid orange;
+    padding: 20px;
+    margin-top: 15%;
+    background: #fff;
+    position: absolute;
+    left: 230px;
+    bottom: -210px;
+}
+.overlay h2{
     font-weight: bolder;
-    padding-left: 85%;
-    color: rgb(117, 117, 117);
+    margin: 10px 0;
+    /* border-bottom:5px solid #fdbf44; */
+}
+.overlay p{
+ color: rgb(110, 110, 110);
+    line-height: 25px;  
+}
+.button{
+    background: black;
+    cursor: pointer;
+    color: #fff;
+    padding: 5px 15px;
+    margin: 10px 0 0 73%;
+}
+.num {
+    /* border: 3px solid purple; */
+    margin-top: 200px;
+    font-size: 150px;
+    font-weight: 700;
+    text-align: right;
+    color: rgb(255, 255, 255, 0.314194);
+}
+.icons{
+    /* border: 3px solid yellowgreen; */
+    display: flex;
+    justify-content: right;
+    padding: 15px;
+}
+.icons i{
+    margin-left: 20px;
+    cursor: pointer;
 }
