@@ -3,14 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Lato&family=Roboto+Slab&display=swap');
+body{
+    font-family: 'Roboto Slab',serif;
+}
 
 
 .hero {
     /* border: 3px solid black; */
     display: flex;
 }
-.side{
+
+.side {
     /* border: 3px solid blue; */
     box-shadow: 0 0 10px 0;
     display: flex;
@@ -18,39 +23,43 @@
     justify-content: space-between;
 }
 
-.icon{
+.icon {
     /* border: 3px solid #fdbf44; */
     font-size: 20px;
     padding: 15px;
     display: flex;
     justify-content: center;
 }
-.line{
+
+.line {
     background-color: rgb(122, 122, 122);
     width: 2px;
     height: 100px;
     margin-left: 23px;
 }
-.side-content{
+
+.side-content {
     /* border: 3px solid yellow; */
     display: flex;
     flex-direction: column;
 }
-.side span{
+
+.side span {
     /* border: 3px solid blueviolet; */
     writing-mode: vertical-rl;
     margin-bottom: 20px;
+    color:rgb(122, 122, 122);
     line-height: 3;
     display: block;
 }
 
-.GFG{
-    transform: scale(-1,-1);
-    -moz-transform: scale(-1,-1);
-    -webkit-transform: scale(-1,-1);
-    -o-transform: scale(-1,-1);
-    -ms-transform: scale(-1,-1);
-    transform: scale(-1,-1);
+.GFG {
+    transform: scale(-1, -1);
+    -moz-transform: scale(-1, -1);
+    -webkit-transform: scale(-1, -1);
+    -o-transform: scale(-1, -1);
+    -ms-transform: scale(-1, -1);
+    transform: scale(-1, -1);
 }
 
 .header {
@@ -58,7 +67,8 @@
     width: 98%;
     margin-left: 1%;
 }
-.header-content{
+
+.header-content {
     /* border: 3px solid green; */
     display: flex;
 }
@@ -119,7 +129,8 @@
     margin-left: 170px;
     text-decoration: solid;
 }
-.overlay{
+
+.overlay {
     /* border: 3px solid red; */
     border-left: 7px solid orange;
     padding: 20px;
@@ -129,22 +140,38 @@
     left: 230px;
     bottom: -210px;
 }
-.overlay h2{
+
+.overlay h2 {
     font-weight: bolder;
+    display: flex;
     margin: 10px 0;
     /* border-bottom:5px solid #fdbf44; */
 }
-.overlay p{
- color: rgb(110, 110, 110);
-    line-height: 25px;  
+
+.overlay h2::after {
+    content: "";
+    position: absolute;
+    bottom: 142px;
+    height: 10px;
+    width: 20%;
+    border: none;
+    opacity: 50%;
+    background-color: rgb(255, 239, 209);
 }
-.button{
+
+.overlay p {
+    color: rgb(110, 110, 110);
+    line-height: 25px;
+}
+
+.button {
     background: black;
     cursor: pointer;
     color: #fff;
     padding: 5px 15px;
     margin: 10px 0 0 73%;
 }
+
 .num {
     /* border: 3px solid purple; */
     margin-top: 200px;
@@ -153,13 +180,15 @@
     text-align: right;
     color: rgb(255, 255, 255, 0.314194);
 }
-.icons{
+
+.icons {
     /* border: 3px solid yellowgreen; */
     display: flex;
     justify-content: right;
     padding: 15px;
 }
-.icons i{
+
+.icons i {
     margin-left: 20px;
     cursor: pointer;
 }
